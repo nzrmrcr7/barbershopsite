@@ -1,0 +1,104 @@
+.prices{
+  position: relative;
+}
+
+.prices-box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.header-box{
+  display: flex;
+  justify-content: center;
+  margin: 5% 0px;
+}
+
+.prices-header{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.offer-types{
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  margin: 0px 30px;
+}
+
+.offer-type-box{
+  width: 30%;
+}
+
+.type{
+  font-size: 20px;
+  font-weight: 500
+}
+
+.type-box{
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.type-box:hover{
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Styles for the width screen */
+@media (min-width: 1200px){
+  .prices-header{
+    font-size: 45px;
+    margin-top: 50px;
+  }
+
+  .offer-types{
+    margin: 0px 100px;
+  }
+
+  .type{
+    font-size: 30px;
+  }
+
+  .type-box{
+    font-size: 25px;
+    margin-top: 25px;
+  }
+}
+
+/* Styles for the mobile screen */
+@media (max-width: 650px){
+  .prices-img{
+    height: 170vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .prices-header{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+
+  .offer-types{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .offer-type-box{
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .type{
+    font-size: 30px;
+  }
+
+  .type-box{
+    font-size: 25px;
+    margin-top: 25px;
+  }
+}

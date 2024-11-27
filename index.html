@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Page Title and Meta Tags -->
+    <title>Барбершоп</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS Stylesheets -->
+    <!-- Links to different stylesheets that manage the layout and look of different sections -->
+    <link rel="stylesheet" href="styles/barbers.css">
+    <link rel="stylesheet" href="styles/prices.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/response.css">
+    <link rel="stylesheet" href="styles/feedbacks.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" 
+    rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-- Header Section -->
+    <header>
+      <!-- Image in the HTML with relative positioning -->
+      <div class="header-image-container">
+        <img class="header-background-image" src="images/background_3.jpg" alt="Barbershop background">
+        
+        <!-- Text layered on top of the image -->
+        <div class="header-text">
+          <!-- Upper header section with navigation -->
+          <section class="upper-header">
+            <div class="house-icon-box">
+              <img src="icons/house.png"> <!-- Home icon -->
+            </div>
+            <div class="toolbar">
+              <!-- Dropdown menus for various categories: institutions, services, academy, contacts -->
+              <!-- Institutions -->
+              <div class="tool">
+                <div>Заклади</div>
+                <div class="institutions">
+                  <div>Заклад 1</div>
+                  <div>Заклад 2</div>
+                  <div>Заклад 3</div>
+                </div>
+              </div>
+              <!-- Services -->
+              <div class="tool">
+                <div>Послуги</div>
+                <div class="institutions">
+                  <div>Стрижка</div>
+                  <div>Комплекс</div>
+                  <div>Гоління</div>
+                </div>
+              </div>
+              <!-- Academy -->
+              <div class="tool">
+                <div>Академія</div>
+                <div class="institutions">
+                  <div>Каталог цін</div>
+                  <div>Адреси</div>
+                </div>
+              </div>
+              <!-- Cantacts -->
+              <div class="tool">
+                <div>Контакти</div>
+                <div class="institutions">
+                  <div>Номер 1</div>
+                  <div>Номер 2</div>
+                  <div>Гаряча лінія</div>
+                </div>
+              </div>
+            </div>
+            <div class = "burger-menu-box">
+              <img class="burger-menu-img" src="icons/hamburger-menu.svg">
+              <div class="burger-menu-toolbar">
+                <div>Заклади</div>
+                <div>Послуги</div>
+                <div>Академія</div>
+                <div>Контакти</div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Central header content with main slogan and call-to-action buttons -->
+          <section class="central-bar-box">
+            <div class="central-bar">
+              <!-- Main text introducing the barbershop -->
+              <div class="main-text">
+                Old-school барбершоп чекає на твій запис
+              </div>
+              <div class="second-main-text">
+                Твій вигляд - твоє майбутнє
+              </div>
+              <div class="button-area">
+                <!-- Online booking button -->
+                <div>
+                  <button class="sign-button">Запис онлайн</button>
+                </div>
+                <!-- Video review section with a play icon -->
+                <div class="video-review-box">
+                  <div>
+                    <div>Відео-огляд</div>
+                    <dv>наших салонів</dv>
+                  </div>
+                  <img class="play-icon" src="icons/video-review.png">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Social media links at the bottom of the header -->
+          <section class="lower-tools">
+            <div>Слідкуйте за оновленням тут</div>
+            <div class="icons-bar">
+              <img src="icons/youtube.png">
+              <img src="icons/twitter.png">
+              <img src="icons/facebook.png">
+              <img src="icons/instagram.png">
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Barbers Section -->
+    <!-- Introduces the barbers with their individual pictures and descriptions -->
+    <section class="barbers-section">
+      <img class="barbers-section-img" src="images/background_2.jpg" width="100%">
+
+      <!-- Container for barbers' info -->
+      <div class="barbers-container">
+        <div class="barbers-header-box">
+          <div class="barbers-header">
+            ПОЗНАЙОМТЕСЯ З НАШИМИ БАРБЕРАМИ ТА ДІЗНАЙТЕСЯ ЇХНІ ІНДИВІДУАЛЬНІ НАВИЧКИ
+          </div>
+        </div>
+        <!-- Flexbox for displaying barbers -->
+        <div class="barbers-flexbox">
+          <!-- Each barber is presented with a picture and description -->
+          <!-- First barber' box -->
+          <div class="barber">
+            <div>
+              <img class="barber-picture" src="images/barber_picture_4.jpg">
+            </div>
+            <div class="barber-description">
+              <div>Микола</div>
+              <div> Амбасадор Бренду</div>
+            </div>
+          </div>
+          <!-- Second barber' box -->
+          <div class="barber">
+            <div>
+              <img class="barber-picture" src="images/barber_picture_3.jpg">
+            </div>
+            <div class="barber-description">
+              <div>Андрій </div>
+              <div>Топ-майстер</div>
+            </div>
+          </div>
+          <!-- Third barber' box -->
+          <div class="barber">
+            <div>
+              <img class="barber-picture" src="images/barber_picture_2.jpg">
+            </div>
+            <div class="barber-description">
+              <div>Михайло</div>
+              <div>Топ-майстер</div>
+            </div>
+          </div>
+          <!-- Forth barber' box -->
+          <div class="barber">
+            <div>
+              <img class="barber-picture" src="images/barber_picture_1.jpg">
+            </div>
+            <div class="barber-description">
+              <div>Тарас</div>
+              <div>Початківець</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices Section -->
+    <!-- Lists services and prices for various types of grooming -->
+    <section class="prices">
+      <img class="prices-img" src="images/background_1.jpg" width="100%">
+
+      <!-- Container for price list -->
+      <div class="prices-box">
+        <div class="header-box">
+          <div class="prices-header">ПОСЛУГИ ТА ЦІНИ</div>
+        </div>
+        <!-- Different offer types with prices -->
+        <div class="offer-types">
+          <div class="offer-type-box">
+            <div class="type">СТРИЖКА</div>
+            <div class="type-box">
+              <div>350-850 грн</div>
+            </div>
+            <div class="type-box">
+              <div>СТРИЖКА ПІД НАСАДКУ</div>
+              <div>200-450 грн</div>
+            </div>
+            <div class="type-box">
+              <div>ПОДОВЖЕНА СТРИЖКА</div>
+              <div>500-1000 грн</div>
+            </div>
+            <div class="type-box">
+              <div>БАТЬКО ТА СИН</div>
+              <div>650-1500 грн</div>
+            </div>
+          </div>
+          <!-- Prices for complex services -->
+          <div class="offer-type-box">
+            <div class="type">КОМПЛЕКС</div>
+            <div class="type-box">
+              <div>СТРИЖКА ТА СТРИЖКА БОРОДИ</div>
+              <div>550-1250 грн</div>
+            </div>
+            <div class="type-box">
+              <div>СТРИЖКА БОРОДИ ТА ОКАНТОВКА</div>
+              <div>250-600 грн</div>
+            </div>
+            <div class="type-box">
+              <div>СТРИЖКА ТА ГОЛІННЯ</div>
+              <div>900-1250 грн</div>
+            </div>
+          </div>
+          <!-- Prices for shave -->
+          <div class="offer-type-box">
+            <div class="type">ГОЛІННЯ</div>
+            <div class="type-box">
+              <div>КОРОЛІВСЬКЕ ГОЛІННЯ</div>
+              <div>350-550 грн</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="responses-flexbox">
+      <!-- Section that displays customer reviews and a promotional video -->
+      <div class="text-flexbox">
+        <div class="responses-header">
+          <div>Відгуки наших клієнтів</div> <!-- Header: Customer reviews -->
+        </div>
+        <div class="response-text">
+          <!-- Text description about customer feedbacks -->
+          Тут ви можете ознайомитись з оцінками  клієнтів, 
+          які вже встигли побувати в Oldschool Barber або 
+          ж самому оцінити роботу майстра
+        </div>
+        <div class="button-box">
+          <!-- Buttons to read or leave a review -->
+          <div>
+            <button class="response-button">Читати відгуки</button> <!-- Read reviews button -->
+          </div>
+          <div>
+            <button class="response-button">Залишити свій</button> <!-- Leave a review button -->
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <!-- Container for the background video -->
+        <video class="responsive-video" autoplay loop muted>
+          <!-- Video that auto-plays and loops showcasing the barbershop -->
+          <source src="images/background-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    
+    <section class="feedback-box">
+      <!-- Section for customer feedback and support -->
+      <div class="feedback-text">
+        <div class="feedback-header"> Відділ зворотнього зв'язку</div> <!-- Feedback department header -->
+        <div class="questions">
+          <!-- Text prompting users to reach out with questions -->
+          <div>Виникли якісь запитання?</div> <!-- "Any questions?" -->
+          <div>Ми з радістю відповімо!</div> <!-- "We will gladly answer!" -->
+        </div>
+      </div>
+      <div class="feedback-buttons">
+        <!-- Interactive buttons for entering user details for feedback -->
+        <input type="text" class="name-input" placeholder="Ваше ім'я"> <!-- "Your name" input -->
+        <input type="tel" class="number-input" placeholder="+380__ __ __"> <!-- Phone number input -->
+        <textarea class="message-input" placeholder="Повідомлення:"></textarea> <!-- Message input -->
+        <div class="send-button-box">
+          <button class="send-button">Надіслати</button> <!-- Send feedback button -->
+        </div>
+      </div>
+    </section>
+    
+    <section class="footer">
+      <!-- Footer section containing privacy policies and social media links -->
+      <div class="footer-text">
+        <div>Політика конфіденційності</div> <!-- Privacy policy link -->
+        <div>Згода на обробку персональних даних</div> <!-- Personal data processing agreement link -->
+      </div>
+      <div class="footer-content">
+        <!-- Footer content with icons and text -->
+        <img class="footer-icon" src="icons/house.png"> <!-- House icon in the footer -->
+        <div class="text">Політика конфіденційності</div> <!-- Privacy policy text -->
+        <div class="text">Згода на обробку персональних даних</div> <!-- Data processing agreement text -->
+        <div class="footer-right-section">
+          <!-- Social media icons -->
+          <img class="footer-icon" src="icons/black-youtube.png"> <!-- YouTube icon -->
+          <img class="footer-icon" src="icons/black-instagram.png"> <!-- Instagram icon -->
+          <img class="footer-icon" src="icons/black-twitter.png"> <!-- Twitter icon -->
+          <img class="footer-icon" src="icons/black-facebook.png"> <!-- Facebook icon -->
+        </div>
+      </div>
+    </section>    
+  </body>
+</html>

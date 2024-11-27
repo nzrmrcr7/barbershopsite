@@ -1,0 +1,91 @@
+.barbers-section{
+  position: relative;
+  color: white;
+}
+
+.barbers-container{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.barbers-header-box{
+  display: flex;
+  justify-content: center;
+}
+
+.barbers-header{
+  font-size: 15px;
+  margin: 30px 0px;
+}
+
+.barbers-flexbox{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px;
+}
+
+.barber{
+  width: 20%;
+}
+
+.barber-picture{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.barber-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+/*  Styles for the width screen */
+@media (min-width: 1200px){
+  .barbers-header{
+    font-size: 30px;
+    margin: 50px 0px;
+  }
+
+  .barbers-flexbox{
+    margin: 0px 50px;
+  }
+
+  .barber-picture{
+    margin-bottom: 30px;
+  }
+
+  .barber-description{
+    font-size: 25px;
+  }
+}
+
+/*  Styles for the mobile screen */
+@media (max-width: 650px){
+  .barbers-flexbox{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barbers-section-img{
+    height: 290vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .barbers-header{
+    font-size: 27px;
+    align-items: center;
+    margin: 30px 30px 0px 30px;
+  }
+
+  .barber{
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  .barber-description{
+    font-size: 20px;
+  }
+}

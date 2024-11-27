@@ -1,0 +1,121 @@
+.responses-flexbox{
+  display: flex;
+  margin: 20px 30px;
+}
+
+.text-flexbox{
+  margin-right: 30px;
+  max-width: 60%;
+}
+
+.responses-header{
+  display: flex;
+  justify-content: center;
+  padding: 8% 0px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.button-box{
+  display: flex;
+  margin: 0px 7%;
+  justify-content: space-between;
+}
+
+.response-text{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.response-button{
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 10px 20px;
+  transition: background-color 0.15s color 0.15s;
+}
+
+.response-button:hover{
+  background-color: #2E1B0E;
+  color: white;
+  border:none;
+  cursor: pointer;
+}
+
+.video-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-video {
+  width: 90%;
+  object-fit: cover;
+}
+
+/* Styles for the width screen */
+@media (min-width: 1200px){
+  .responses-flexbox{
+    margin: 40px 50px 40px 150px;
+  }
+
+  .responses-header{
+    font-size: 40px;
+  }
+
+  .response-text{
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .response-button{
+    font-size: 30px;
+    padding: 20px 45px;
+    border-radius: 30px;
+  }
+
+  .responsive-video {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Styles fot the mobile screen */
+@media (max-width: 650px){
+  .responses-flexbox{
+    flex-direction: column;
+  }
+
+  .text-flexbox{
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+
+  .responses-header{
+    font-size: 50px;
+  }
+
+  .response-text{
+    font-size: 30px;
+  }
+
+  .button-box{
+    margin-bottom: 30px;
+  }
+
+  .response-button{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .responsive-video {
+    margin-left: 0px;
+    height: 220px;
+    width: 400px;
+    object-fit: cover;
+  }
+}

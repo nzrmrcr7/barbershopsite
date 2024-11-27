@@ -1,0 +1,153 @@
+.feedback-box{
+  background-color: #2E1B0E;
+  color: white;
+  display: flex;
+  padding: 30px;
+}
+
+.feedback-text{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.feedback-header{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin: 30px 0px;
+}
+
+.feedback-buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input,
+.number-input,
+.message-input,
+.send-button{
+  background-color: #2E1B0E;
+  border: 1px solid white;
+  color: white;
+  margin: 5px;
+  border-radius: 20px;
+  transition: background-color 0.15s;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.name-input:focus,
+.number-input:focus,
+.message-input:focus,
+.send-button:hover{
+  background-color: #0f0804;
+  cursor: pointer;
+}
+
+.name-input,
+.number-input,
+.message-input{
+  width: 100%;
+}
+
+.message-input{
+  height: 150px;
+  resize: none;
+}
+
+.send-button-box{
+  display: flex;
+  justify-content: center;
+}
+
+.send-button{
+  padding: 5px;
+  width: 150px;
+}
+
+/* Styles for the width screen */
+@media (min-width: 1200px){
+  .feedback-box{
+    padding: 50px;
+  }
+
+  .feedback-header{
+    font-size: 40px;
+    margin: 50px 0px;
+  }
+
+  .questions{
+    font-size: 25px;
+  }
+
+  .name-input,
+  .number-input,
+  .message-input,
+  .send-button{
+    border-radius: 30px;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  .name-input{
+    padding: 20px 150px 20px 20px;
+  }
+  
+  .number-input{
+    padding: 20px 130px 20px 20px;
+  }
+  
+  .message-input{
+    padding: 30px 100px 30px 10px;
+  }
+
+  .send-button{
+    padding: 10px 20px;
+    width: 250px;
+  }
+}
+
+/* Styles for the mobile screen */
+@media (max-width: 650px){
+  .feedback-box{
+    flex-direction: column;
+  }
+
+  .feedback-text{
+    width: 100%;
+  }
+
+  .feedback-header{
+    display: none;
+  }
+
+  .feedback-text{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .name-input,
+  .number-input,
+  .message-input,
+  .send-button{
+    border-radius: 30px;
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+
+  .name-input,
+  .number-input,
+  .message-input{
+    width: 280px;
+  }
+
+  .send-button{
+    width: 150px;
+  }
+
+  .feedback-buttons{
+    align-items: center;
+  }
+}
